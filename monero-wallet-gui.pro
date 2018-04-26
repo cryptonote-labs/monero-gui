@@ -8,7 +8,7 @@ CONFIG += c++11 link_pkgconfig
 packagesExist(libpcsclite) {
     PKGCONFIG += libpcsclite
 }
-QMAKE_CXXFLAGS += -fPIC -fstack-protector
+QMAKE_CXXFLAGS += -fstack-protector
 QMAKE_LFLAGS += -fstack-protector
 
 # cleaning "auto-generated" bitmonero directory on "make distclean"
